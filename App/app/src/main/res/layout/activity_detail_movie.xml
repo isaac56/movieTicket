@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.tistory.webnautes.mymovie.DetailMovieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movieTitle_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="35sp"
+            android:textStyle="bold"
+
+            tools:text="영화 제목" />
+
+        <TextView
+            android:id="@+id/movieTitleSub_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            tools:text="eneglish title, 映畫" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/poster_background_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@android:color/transparent" />
+
+                <com.tistory.webnautes.mymovie.RadiusImageView
+                    android:id="@+id/poster_imageView"
+                    android:layout_width="130dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@android:color/transparent" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/movieSpac_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    tools:text="드라마 | 대만 | 113분" />
+
+                <TextView
+                    android:id="@+id/movieYear_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    tools:text="1995. 12 개봉" />
+
+                <TextView
+                    android:id="@+id/filmRate_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    tools:text="15세 관람가" />
+
+                <TextView
+                    android:id="@+id/averageScore_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"
+                    tools:text="평균평점: 4.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/score_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:progressDrawable="@drawable/yellow_rating_bar_56px"
+                    android:stepSize="1"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="3dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/line" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="감독 및 출연진"
+                    />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="3dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/line" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/person_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/line" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="스틸컷"
+                    />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/line" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/photo_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="줄거리"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_gravity="center"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="3dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/movieStory_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="3dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="코멘트"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="20sp" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="3dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/line" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/review_background" />
+
+                <EditText
+                    android:id="@+id/comment_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="top"
+                    android:background = "@null"
+                    android:maxLength="200"
+                    android:textSize="14sp"
+                    android:ems="10"
+                    android:singleLine="false"/>
+            </FrameLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="쓰기"
+                android:onClick="comment_button_clicked"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comment_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "12dp"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

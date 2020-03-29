@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tistory.webnautes.mymovie">
+
+    <supports-screens android:anyDensity="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".recommendTab.RecommendActivity" />
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".TabActivity"></activity>
+        <activity android:name=".DetailMovieActivity" />
+        <activity android:name=".recommendTab.RecommendTabGroup" />
+        <activity android:name=".ratingTab.RatingActivity" />
+        <activity android:name=".ratingTab.RatingTabGroup"></activity>
+        <activity android:name=".wishListTab.WishListActivity" />
+        <activity android:name=".wishListTab.WishListTabGroup" />
+        <activity android:name=".TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

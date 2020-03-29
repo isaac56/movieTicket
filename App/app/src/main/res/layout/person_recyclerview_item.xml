@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.tistory.webnautes.mymovie.RadiusImageView
+        android:id="@+id/personImage_imageView"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/kName_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="이름" />
+
+    <TextView
+        android:id="@+id/eName_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/part_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray" />
+</LinearLayout>
