@@ -4,5 +4,5 @@
 # 시연영상: <https://www.youtube.com/watch?v=wg1hso1KnME>
 # 주요화면:
 - 추천받기 탭
-![Uploading movieTicket1.png…]()
+![https://github.com/isaac56/movieTicket/blob/master/Docs/screenshot/screenshot1.png]()
 
